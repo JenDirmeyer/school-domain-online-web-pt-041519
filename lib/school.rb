@@ -4,12 +4,12 @@ class School
   def initialize(roster)
     @roster = {}
   end 
- 
-  def roster= (grade, arg)
-    
-    
- 
+
   def add_student(student,grade)
-    @roster[grade] << student
+    if @roster.keys.include?(grade) == false 
+      @roster[grade] = []
+      @roster[grade] << student
+    else 
+      @roster[grade] << student
   end
 end  
