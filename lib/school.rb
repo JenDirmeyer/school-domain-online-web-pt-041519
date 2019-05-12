@@ -6,6 +6,6 @@ class School
   end 
   
   def add_student(student,grade)
-    @roster[grade] = student
+    @roster[grade] = Array.new(student)
   end
 end  
