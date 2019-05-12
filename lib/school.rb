@@ -19,7 +19,7 @@ class School
     @roster[grade]
   end
   
-  def sort(roster)
-    roster.each_value {|list| list.sort}
+  def sort
+    @roster.each_value {|list| list.sort}
   end  
 end  
