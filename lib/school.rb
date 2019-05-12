@@ -1,6 +1,6 @@
 class School
   attr_accessor :roster 
-  attr_reader :grade
+
   
   def initialize(roster)
     @roster = {}
@@ -15,4 +15,7 @@ class School
     end  
   end
   
+  def grade(grade)
+    @roster[grade]
+  end
 end  
