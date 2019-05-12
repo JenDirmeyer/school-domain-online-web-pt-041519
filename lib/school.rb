@@ -3,13 +3,11 @@ class School
   
   def initialize(roster)
     @roster = {}
+    @roster(:grade) = []
   end 
-  
-  def grade= (grade)
-    @roster[grade] = []
-  end  
-  
+ 
   def add_student(student,grade)
-    @roster[grade] << student
+    :grade = grade
+    @roster[:grade] << student
   end
 end  
