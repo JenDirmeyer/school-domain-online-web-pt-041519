@@ -7,7 +7,11 @@ class School
   
   def add_student(student,grade)
     @roster[grade] = []
-    if type(student) == string
-    student.each {|kid| @roster[grade] << kid}
+    if type(student) == "string"
+      @roster[grade] << student
+    else
+      
+      student.each {|kid| @roster[grade] << kid}
+    end  
   end
 end  
