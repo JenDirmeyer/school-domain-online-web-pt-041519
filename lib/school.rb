@@ -7,7 +7,7 @@ class School
   
   def add_student(student,grade)
     @roster[grade] = []
-    if type(student) == "string"
+    if student.class == "string"
       @roster[grade] << student
     else
       
