@@ -3,5 +3,9 @@ class School
   
   def initialize(roster)
     @roster = {}
-  end  
+  end 
+  
+  def add_student(student,grade)
+    @roster[grade] << student
+  end
 end  
